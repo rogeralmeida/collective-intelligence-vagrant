@@ -22,12 +22,13 @@ It's also very useful to have vagrant-vbguest (https://github.com/dotless-de/vag
 
 ## Setup
 Clone this repository:
-> https://github.com/rogercafe/collective-intelligence-vagrant.git collective-intelligence-vagrant
-
+```
+git clone https://github.com/rogercafe/collective-intelligence-vagrant.git collective-intelligence-vagrant
+```
 Enter your working directory and starting vagrant
-
-> cd collective-intelligence-vagrant
-> vagrant up
-> vagrant ssh
-
+```
+cd collective-intelligence-vagrant
+vagrant up
+vagrant ssh
+```
 ... and go ahead, code! :D
