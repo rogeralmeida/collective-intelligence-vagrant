@@ -13,6 +13,10 @@ package { "python-dev":
     require  => Exec['apt-get update'],
 }
 
+package { "xclip":
+    ensure => "installed",
+    require  => Exec['apt-get update'],
+}
 
 package { "git-core":
 	ensure => "installed",
