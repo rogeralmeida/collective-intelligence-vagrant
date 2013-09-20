@@ -21,3 +21,15 @@ package { "xclip":
 package { "git-core":
 	ensure => "installed",
 }
+
+package {'wget':
+	ensure => 'installed',
+	require => Package['python-dev'],
+}
+
+exec { "install easy_install":
+    command => "wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python",
+    path => "/usr/bin/",
+    creates => "/usr/bin/easy_install",
+    require  => Package["python-dev"],
+}

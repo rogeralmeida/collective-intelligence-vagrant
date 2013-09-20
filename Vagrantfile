@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   #config.vm.forward_port 8000, 8001
   #config.vm.forward_port 9999, 9998
 
-  config.vm.network :public_network, :bridge => 'en1: Wi-Fi (AirPort)'
+  #config.vm.network :public_network, :bridge => 'en1: Wi-Fi (AirPort)'
 
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = "manifests"
